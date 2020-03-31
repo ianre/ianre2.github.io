@@ -18,10 +18,22 @@
 <script>
     document.body.style.backgroundColor = "BLACK";
 
+    var canvas = document.getElementById("bk");
+    canvas.addEventListener('click', function() { 
+
+window.location.href = "https://github.com/daftmau5555";
+
+}, false);
+
+
+
     
 </script>
 
 <script>
+
+
+
     (function () {
         function createCanvas() {
 
@@ -71,6 +83,8 @@
             canvas.onmousemove = function () {
                 ctx.fillStyle = "dark gray";
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                
                 /**
                  ctx.fillStyle = getRandomColor();
                  ctx.textAlign = "center";
@@ -81,8 +95,15 @@
                  */
                 //drawLine(100, 100, 20 ,20, ctx);
                 //ctx.fillStyle = "light gray";
-                //ctx.fillText("var y2 = (yCenter * y ) + (  (radius * ((x + y) / 2.0)) * ( Math.sin(pi2 - ang)));", event.x, event.y);
+
+                /*   
+                ctx.strokeStyle = "FloralWhite";
+                ctx.fillStyle = "FloralWhite";
+                ctx.textAlign = "center";
+                ctx.font = "230px Arial";
+                ctx.fillText("var y2 = (yCenter * y ) + (  (radius * ((x + y) / 2.0)) * ( Math.sin(pi2 - ang)));", event.x, event.y);
                 ctx.fillStyle = "dark gray";
+                */
 
                 var locX = event.x;
                 var locY = event.y;
@@ -242,8 +263,20 @@
                 }
 
 
-                //ctx.fillStyle = "blue";
+                /*
+                ctx.fillStyle = "blue";
                 //ctx.fillRect(0, 0, 10, 10);
+
+                //ctx.strokeStyle = "FloralWhite";
+                //ctx.fillStyle = "FloralWhite";
+                ctx.textAlign = "center";
+                ctx.font = "230px Arial";
+                ctx.fillText("var y2 = (yCenter * y ) + (  (radius * ((x + y) / 2.0)) * ( Math.sin(pi2 - ang)));", event.x, event.y);
+                ctx.strokeStyle = "dark gray";
+                ctx.fillStyle = "dark gray";
+                */
+
+
                 prevX = outputX;
                 prevY = outputY;
 
